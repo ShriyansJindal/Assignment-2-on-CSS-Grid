@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Bellota+Text&family=Dancing+Script:wght@700&family=Indie+Flower&family=Mulish&family=Poppins&family=Roboto&display=swap');
 body{
-    margin: 0%;
     padding: 0%;
     background-color: #e6f4ff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
     text-align: center;
 }
 .grid-container {
@@ -15,21 +17,19 @@ body{
     'six seven eight nine'
     'six ten eleven twelve'
     ;
-    padding: 10px;
-    column-gap: 7px;
-    row-gap: 7px;
+    column-gap: 8px;
+    row-gap: 8px;
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
     background-size: cover;
     background-position: center;
     border-radius: 7px;
     transition: all .1s linear;
-    overflow: hidden;
 }
 .grid-item:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   .grid-item1{
     grid-area: Main;
@@ -59,7 +59,6 @@ body{
 .grid-item7{
     grid-area: seven;
     background-image: url(https://images.pexels.com/photos/3589586/pexels-photo-3589586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-position: center;
   }
   .grid-item8{
       grid-area: eight;
@@ -71,7 +70,6 @@ body{
   }
   .grid-item10{
     grid-area: ten;
-    
     background-image: url(https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-position:unset;
   }
@@ -79,6 +77,5 @@ body{
     grid-area: eleven;
     grid-column-start: 3;
     grid-column-end: span 2;
-    background-image: url(https://images.pexels.com/photos/1480807/pexels-photo-1480807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    
+    background-image: url(https://images.pexels.com/photos/1480807/pexels-photo-1480807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); 
   }
